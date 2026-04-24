@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 
 { 
-    public function index () {  return 'ini adalah halaman data mahasiswa';
-         }
+    public function index () { return 'ini adalah halaman data mahasiswa';}
 
 }
+
+
+    
+
+
     
 
