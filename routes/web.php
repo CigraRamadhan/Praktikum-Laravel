@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Contollers\Controller;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ProdukController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Contollers\Controller;
+use App\Http\Controllers\MahasiswaController;
 
 
 
@@ -28,3 +29,5 @@ Route::get('/mahasiswa', [TestController::class, 'index']);
 Route::get('/testproduk', [ProdukController::class, 'index']);
 Route::get('/showproduk', [ProdukContoller::class, 'halpro']);
 Route::get('/halamanperoduk', [ProdukContoller::class,'testdoang']);
+
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
