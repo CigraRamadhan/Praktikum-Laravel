@@ -31,3 +31,8 @@ Route::get('/showproduk', [ProdukContoller::class, 'halpro']);
 Route::get('/halamanperoduk', [ProdukContoller::class,'testdoang']);
 
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
+Route::post('/mahasiswa/store', [MahasiswaController::class, 'store']);
+Route::get('/mahasiswa/delete/{id}', [MahasiswaController::class, 'destroy']);
+Route::get('/mahasiswa/edit/{id}', [MahasiswaController::class, 'edit']);
+
